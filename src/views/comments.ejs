@@ -1,0 +1,20 @@
+<div class="comments-container" id="comments-section">
+  <div class="comments-header">
+    <h3>Reader Comments (<span id="comments-count">0</span>)</h3>
+  </div>
+
+  <!-- Comment Submission Form -->
+  <form class="comment-form" id="comment-submission-form">
+    <div class="comment-form-grid">
+      <input type="text" id="comment-input-name" placeholder="Your Name" required>
+      <input type="email" id="comment-input-email" placeholder="Your Email Address (Private)" required>
+      <textarea id="comment-input-text" placeholder="Share your experience, tips, or ask a question..." required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Post Comment</button>
+  </form>
+
+  <!-- Render Comments List -->
+  <div class="comments-list" id="comments-list-box">
+    <!-- Comments will be injected here dynamically by app.js -->
+  </div>
+</div>

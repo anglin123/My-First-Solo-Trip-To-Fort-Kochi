@@ -1,0 +1,187 @@
+<h2 class="section-title">The Complete Budget Breakdown & Calculator</h2>
+<p>
+  One of the biggest concerns for first-time solo travelers is budgeting. Fort Kochi is a wonderful destination because it caters to both shoestring backpackers and luxury heritage seekers. Below, you will find an estimated cost sheet for various services, followed by an interactive calculator to see how far your money will go based on your daily spending goal.
+</p>
+
+<!-- Interactive Budget Calculator Box -->
+<div class="budget-calculator-box">
+  <h3>Interactive Daily Budget Planner</h3>
+  <p>Select your target daily budget to see a personalized breakdown of accommodation, transport, meals, and activities in Fort Kochi:</p>
+  
+  <div class="budget-tiers">
+    <button class="budget-tier-btn active" data-budget="1000">₹1,000 / Day (Backpacker)</button>
+    <button class="budget-tier-btn" data-budget="2000">₹2,000 / Day (Flashpacker)</button>
+    <button class="budget-tier-btn" data-budget="3000">₹3,000 / Day (Mid-Range Explorer)</button>
+    <button class="budget-tier-btn" data-budget="5000">₹5,000 / Day (Boutique Traveler)</button>
+  </div>
+
+  <div class="budget-display-grid">
+    
+    <!-- Cost bars -->
+    <div class="budget-breakdown-bars">
+      <div class="budget-bar-group">
+        <div class="budget-bar-label">
+          <span>Accommodation (Hostels/Homestays/Hotels)</span>
+          <span class="budget-val" id="val-accommodation">₹400</span>
+        </div>
+        <div class="budget-bar-track">
+          <div class="budget-bar-fill" id="fill-accommodation" style="width: 40%;"></div>
+        </div>
+      </div>
+
+      <div class="budget-bar-group">
+        <div class="budget-bar-label">
+          <span>Food & Water (Local Meals, Cafés)</span>
+          <span class="budget-val" id="val-food">₹300</span>
+        </div>
+        <div class="budget-bar-track">
+          <div class="budget-bar-fill" id="fill-food" style="style: width: 30%;"></div>
+        </div>
+      </div>
+
+      <div class="budget-bar-group">
+        <div class="budget-bar-label">
+          <span>Local Transport (Ferries, Metro, Autos)</span>
+          <span class="budget-val" id="val-transport">₹100</span>
+        </div>
+        <div class="budget-bar-track">
+          <div class="budget-bar-fill" id="fill-transport" style="width: 10%;"></div>
+        </div>
+      </div>
+
+      <div class="budget-bar-group">
+        <div class="budget-bar-label">
+          <span>Sightseeing & Activities (Entry Fees, Shows)</span>
+          <span class="budget-val" id="val-activities">₹100</span>
+        </div>
+        <div class="budget-bar-track">
+          <div class="budget-bar-fill" id="fill-activities" style="width: 10%;"></div>
+        </div>
+      </div>
+
+      <div class="budget-bar-group">
+        <div class="budget-bar-label">
+          <span>Shopping & Miscellaneous (Spices, Souvenirs)</span>
+          <span class="budget-val" id="val-misc">₹100</span>
+        </div>
+        <div class="budget-bar-track">
+          <div class="budget-bar-fill" id="fill-misc" style="width: 10%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary Box -->
+    <div class="budget-calc-summary">
+      <div class="total-val" id="summary-total">₹1,000</div>
+      <p style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">Target Daily Budget</p>
+      <p id="budget-description" style="color: white; font-size: 0.95rem;">
+        Perfect for shoestring travelers. You will stay in clean shared hostel dormitories, eat nutritious traditional Kerala meals, travel using public ferries or buses, and focus on free or low-cost sights.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<h3>Standard Price Catalog in Fort Kochi (Estimated)</h3>
+<p>
+  Here is a quick reference guide of what you can expect to pay for individual transport, lodging, food, and activities. Knowing these average rates helps prevent getting overcharged.
+</p>
+
+<div class="table-responsive">
+  <table class="budget-table">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Item Details</th>
+        <th>Estimated Cost (INR)</th>
+        <th>Money-Saving Tip / Alternative</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Train</strong></td>
+        <td>Express train ticket from nearby major cities to Ernakulam (Sleeper Class)</td>
+        <td>₹250 - ₹450</td>
+        <td>Book well in advance to avoid Tatkal premium rates.</td>
+      </tr>
+      <tr>
+        <td><strong>Bus</strong></td>
+        <td>Local KSRTC bus from Ernakulam to Fort Kochi (one-way)</td>
+        <td>₹18 - ₹30</td>
+        <td>Avoid taking peak hour buses as they can get extremely crowded.</td>
+      </tr>
+      <tr>
+        <td><strong>Auto-rickshaw</strong></td>
+        <td>Short ride within Fort Kochi (up to 2 km)</td>
+        <td>₹40 - ₹60</td>
+        <td>Ask the driver to use the meter, or agree on the fare before boarding.</td>
+      </tr>
+      <tr>
+        <td><strong>Auto-rickshaw</strong></td>
+        <td>From Fort Kochi to Mattancherry / Jew Town</td>
+        <td>₹80 - ₹120</td>
+        <td>Bargain politely. If they ask for ₹200, refuse and wait for another.</td>
+      </tr>
+      <tr>
+        <td><strong>Kochi Metro</strong></td>
+        <td>Aluva to MG Road / Ernakulam South (one-way transit)</td>
+        <td>₹20 - ₹60</td>
+        <td>Buy tickets online via the Kochi1 app to save time.</td>
+      </tr>
+      <tr>
+        <td><strong>Kochi Water Metro</strong></td>
+        <td>AC electric catamaran from High Court Terminal to Vypin / Bolgatty</td>
+        <td>₹20 - ₹40</td>
+        <td>Buy a day pass if you plan to make multiple island hops.</td>
+      </tr>
+      <tr>
+        <td><strong>Public Ferry</strong></td>
+        <td>Wooden ferry boat from Ernakulam Main Jetty to Fort Kochi (one-way)</td>
+        <td>₹6</td>
+        <td>By far the cheapest and most romantic way to enter Fort Kochi. Runs every 20-30 minutes.</td>
+      </tr>
+      <tr>
+        <td><strong>Hostel</strong></td>
+        <td>Shared dorm bed on Princess Street (per night, AC/Non-AC)</td>
+        <td>₹450 - ₹800</td>
+        <td>Includes free high-speed Wi-Fi and common room filters. Great for solo travelers.</td>
+      </tr>
+      <tr>
+        <td><strong>Homestay</strong></td>
+        <td>Private room in a local home (per night, with private bath)</td>
+        <td>₹1,200 - ₹2,200</td>
+        <td>Often includes home-cooked breakfast and helps local families directly.</td>
+      </tr>
+      <tr>
+        <td><strong>Heritage Hotel</strong></td>
+        <td>Boutique air-conditioned luxury room in restored Dutch/Portuguese building</td>
+        <td>₹4,500 - ₹9,000+</td>
+        <td>Includes swimming pools, continental breakfast, and high-end services.</td>
+      </tr>
+      <tr>
+        <td><strong>Local Food</strong></td>
+        <td>Traditional vegetarian Kerala Meals (Sadhya) at local mess</td>
+        <td>₹90 - ₹130</td>
+        <td>Unlimited rice and curries on a banana leaf. Incredibly cheap and delicious.</td>
+      </tr>
+      <tr>
+        <td><strong>Café Dining</strong></td>
+        <td>Fresh juice, espresso coffee, and breakfast/cake at boutique café</td>
+        <td>₹250 - ₹450</td>
+        <td>Treat yourself once a day. Kashi, David Hall, and Alice Deli are outstanding.</td>
+      </tr>
+      <tr>
+        <td><strong>Kathakali Ticket</strong></td>
+        <td>1-hour cultural show + makeup viewing at Kathakali Centre</td>
+        <td>₹400</td>
+        <td>A must-do. The price is fixed for everyone. Arrive early.</td>
+      </tr>
+      <tr>
+        <td><strong>Shopping</strong></td>
+        <td>100g packets of high-grade cardamoms, pepper, and tea leaves in Jew Town</td>
+        <td>₹150 - ₹300</td>
+        <td>Shop at government-run cooperatives to ensure spice purity and fair prices.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

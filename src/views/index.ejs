@@ -1,0 +1,114 @@
+<%- include('header') %>
+
+  <!-- Immersive Full-screen Hero Section -->
+  <%- include('hero') %>
+
+  <!-- Main Content Layout with Sticky Sidebar -->
+  <div class="layout-container">
+    
+    <!-- Main Article Body -->
+    <main>
+      
+      <!-- Part 1: The Journey Story -->
+      <section id="journey-reflections">
+        <%- include('story') %>
+      </section>
+
+      <!-- Part 2: 3-Day Detailed Itinerary -->
+      <section id="itinerary">
+        <%- include('itinerary') %>
+      </section>
+
+      <!-- Part 3: Places Visited -->
+      <section id="places">
+        <%- include('places') %>
+      </section>
+
+      <!-- Part 4: Interactive Map -->
+      <section id="interactive-map">
+        <%- include('map') %>
+      </section>
+
+      <!-- Part 5: Budget Breakdown & Live Calculator -->
+      <section id="budget">
+        <%- include('budget') %>
+      </section>
+
+      <!-- Part 6: Local Culinary Guide -->
+      <section id="local-food">
+        <%- include('food') %>
+      </section>
+
+      <!-- Part 7: Safety & Local Tips for Solo Travelers -->
+      <section id="safety-tips">
+        <%- include('safety') %>
+      </section>
+
+      <!-- Part 8: Photography Guide -->
+      <section id="photography">
+        <%- include('photography') %>
+      </section>
+
+      <!-- Part 9: Interactive Packing Checklist -->
+      <section id="packing-checklist">
+        <%- include('checklist') %>
+      </section>
+
+      <!-- Part 10: Common Mistakes Made -->
+      <section id="common-mistakes">
+        <%- include('mistakes') %>
+      </section>
+
+      <!-- Part 11: Quick Travel Guides -->
+      <section id="travel-tips">
+        <%- include('tips') %>
+      </section>
+
+      <!-- Part 12: Photo Gallery (with Lightbox) -->
+      <section id="image-gallery">
+        <%- include('gallery') %>
+      </section>
+
+      <!-- Part 13: Frequently Asked Questions (Accordion) -->
+      <section id="faqs">
+        <%- include('faqs') %>
+      </section>
+
+      <!-- Related Stories Grid -->
+      <%- include('related') %>
+
+      <!-- Author Bio -->
+      <%- include('author') %>
+
+      <!-- User Comments Thread -->
+      <%- include('comments') %>
+
+      <!-- Newsletter Join Box -->
+      <%- include('newsletter') %>
+
+    </main>
+
+    <!-- Right Sidebar Table of Contents (Scrollspy Navigation) -->
+    <aside class="sidebar">
+      <h3>On This Page</h3>
+      <ul class="toc-list">
+        <li><a href="#journey-reflections">Journey Story</a></li>
+        <li><a href="#itinerary">3-Day Itinerary</a></li>
+        <li><a href="#places">14 Sights to Explore</a></li>
+        <li><a href="#interactive-map">Interactive Map</a></li>
+        <li><a href="#budget">Budget Breakdown</a></li>
+        <li><a href="#local-food">Culinary Experience</a></li>
+        <li><a href="#safety-tips">Safety & Emergency</a></li>
+        <li><a href="#photography">Photography Guide</a></li>
+        <li><a href="#packing-checklist">Packing Checklist</a></li>
+        <li><a href="#common-mistakes">Mistakes I Made</a></li>
+        <li><a href="#travel-tips">Practical Travel Tips</a></li>
+        <li><a href="#image-gallery">Photo Gallery</a></li>
+        <li><a href="#faqs">FAQs Guide</a></li>
+        <li><a href="#comments-section">Traveler Comments</a></li>
+      </ul>
+    </aside>
+
+  </div>
+
+<%- include('footer') %>
